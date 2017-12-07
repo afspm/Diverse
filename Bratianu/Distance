@@ -1,0 +1,23 @@
+static void Main(string[] args)
+        {
+            while (true)
+            {
+                int x = 0, y = 0;
+                Console.WriteLine("Introduceti stringul");
+                string s = Console.ReadLine();
+                foreach (char ch in s)
+                {
+                    if (ch == 'w')
+                        x += 1;
+                    if (ch == 's')
+                        x -= 1;
+                    if (ch == 'a')
+                        y -= 1;
+                    if (ch == 'd')
+                        y += 1;
+                }
+                Console.WriteLine("x = " + x + "y = " + y);
+                Console.WriteLine("Distance" + Math.Sqrt(x * x + y * y));
+                
+            }
+        }
